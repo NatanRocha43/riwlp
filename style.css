@@ -7,7 +7,7 @@ body {
 
 header {
   background-color: #333;
-  color: #fff;
+  color: red;
   padding: 20px 0;
   text-align: center;
 }
@@ -26,9 +26,17 @@ p {
   background-image: url('hero.jpg');
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 50px  0 100px 0;
   text-align: center;
-  color: #fff;
+  color: black;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.hero__img{
+  width: 100vh;
+  height: 500px;
+  margin: 0 auto;
 }
 
 .hero h2 {
@@ -46,9 +54,11 @@ p {
   background-color: #007bff;
   color: #fff;
   padding: 12px 20px;
+  width: 200px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin: 0 auto;
 }
 
 .hero .btn:hover {
@@ -62,18 +72,24 @@ p {
 
 .services ul {
   list-style: none;
-  padding: 0;
+  padding: 0; 
 }
 
 .services li {
   display: inline-block;
   margin: 0 20px;
 }
+.services li:hover{
+  font-size: 16.5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .benefits {
   background-color: #f0f0f0;
   padding: 40px 0;
 }
+
 
 .benefits h2 {
   text-align: center;
@@ -84,6 +100,10 @@ p {
   list-style: none;
   padding: 0;
   margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .benefits li {
@@ -96,6 +116,9 @@ p {
 .contact {
   padding: 40px 0;
   background-color: #fff;
+}
+.contact h2{
+  text-align: center;
 }
 
 .contact form {
@@ -136,6 +159,9 @@ p {
 
 .map {
   padding: 40px 0;
+}
+.map h2{
+  text-align: center;
 }
 
 .map iframe {
